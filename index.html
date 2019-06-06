@@ -29,12 +29,13 @@
           <option value="4">Red</option>
         </select>
         <!-- Ice cream -->
-        <!-- <label for="ice-cream">Hair color</label> -->
-        <div class="radio" id="ice-cream">
-          <label>
-            <input type="radio" name="flavor" value="chocolate" checked>
-            Chocolate
-          </label>
+        <fieldset>
+          <legend>Favorite ice cream flavor</legend>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="chocolate" checked>
+              Chocolate
+            </label>
           </div>
           <div class="radio">
             <label>
@@ -48,6 +49,11 @@
               Cookies & Cream
             </label>
           </div>
+        </fieldset>
+        <!-- Favorite color -->
+        <div class="form-group">
+          <label for="color">Favorite color</label>
+          <input id="color" class="form-control" type="color">
         </div>
         <!-- Submit button -->
         <button type="submit" class="btn btn-info">Submit</button>
